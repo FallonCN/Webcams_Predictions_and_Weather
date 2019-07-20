@@ -1,20 +1,13 @@
 Required libraries:
-
-OpenCV (pip install opencv-python).
-
-scikit-multilearn (pip install scikit-multilearn)
+* OpenCV (pip install opencv-python).
+* scikit-multilearn (pip install scikit-multilearn)
 
 Code exexecution:
-
-First put all files in one directory and uncompress the .zip files.
-
-Then run 'clean_data.py' on Spark to produce a single cleaned data file for ML. 
-
-Run on command line: spark-submit data_clean.py yvr-weather(sample input)
-
-Output a .csv file named 'weather_pd.csv'.
-
-Lastly you can run either 'weather_predict_by_conditions.py' or 'weather_PredictByImages.py' in any order.
+* First put all files in one directory and uncompress the .zip files.
+* Then run 'clean_data.py' on Spark to produce a single cleaned data file for ML. 
+* Run on command line: spark-submit data_clean.py yvr-weather(sample input)
+* Output a .csv file named 'weather_pd.csv'.
+* Lastly you can run either 'weather_predict_by_conditions.py' or 'weather_PredictByImages.py' in any order.
 
 Run on command line with no additianal sys argument since it takes 'weather_pd.csv' and/or 'katkam-scaled'as the only input. (e.g. python3 weather_PredictByImages.py)
 
